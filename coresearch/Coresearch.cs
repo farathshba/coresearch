@@ -16,6 +16,7 @@ namespace coresearch
         private readonly bool _normalize = true;
         private readonly Regex _rgx;
         private readonly int _memoryLimit = 0;
+        private int _countA = 0;
 
         public Coresearch(bool debug = false, bool normalize = true, string normalizePattern = "[^a-zA-Z0-9 -]", int memoryLimit = 0)
         {
